@@ -1,0 +1,100 @@
+.startingSections{
+         margin-bottom:100px;
+		 background: linear-gradient(#96deda , #50c9c3) !important;
+         }
+         .separatedSections{
+         padding-bottom:100px;
+         }
+         .headerImage{
+         border-radius:50%;
+         width:25%;
+         height:auto;
+         }
+         .roundedImage{
+         border-radius:50%;
+         }
+         .centerElement{
+         text-align:center;
+         padding-bottom:30px;
+         }
+         .largerHeadline{
+         margin-bottom: .5rem;
+         font-family: Lato;
+         font-weight: 500;
+         line-height: 1.1;
+         color: #0a0a0a;
+         text-align:center;
+         }
+		 .headerInterests{
+			 font-family: Lato;
+		 }
+         .resizeImage{
+         width:250;
+         height:250px;
+         }
+         .styleParagraph{
+         font-family: 'Lato';
+         font-size: 20px;
+         line-height: 35px;
+         color:#000000;
+		 text-align:justify;
+         }
+         .betweenSections{
+         padding-bottom:50px;
+         }
+         .activitiesCSS{
+         font-family: Lato;
+         font-size: 20px;
+         }
+         .alignDate{
+         text-align: left;
+         }
+		 .centerFooter{
+			text-align:center;
+			padding-bottom:30px;
+		 }
+		 .glyphiconStyle{
+			font-size:40px;
+			margin-right:15px;
+		 }
+		 .glyphiconText{
+			font-family: Lato;
+			font-size: 20px;
+			display:flex;
+		 }
+		 @media (max-width: 768px) {
+
+			[class*="col-"]{
+				margin-bottom: 40px;
+			}
+			
+			p{
+				font-size:15px !important;
+			}
+			
+			.imgCenterMobile{
+				text-align:center !important;
+			}
+			
+			.imgLeftMobile{
+				padding-right:20px;
+			}
+			
+			.headerImage{
+				margin-top:25px;
+				width:80%;
+			}
+			
+			.startingSection{
+				height:400px;
+			}
+			
+			.glyphiconText{
+				text-align:center;
+				display:grid;
+			}
+			
+			.glyphicon{
+				margin-bottom:5px;
+			}
+		}
