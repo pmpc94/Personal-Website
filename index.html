@@ -18,6 +18,8 @@
       <!--<link href="./timeline.css" rel="stylesheet"/>-->
       <!-- Favicon -->
       <link rel="shortcut icon" type="favicon.ico" href="images/favicon.ico"/>
+	  <script src="MIT/jquery.translate.js"></script>
+	  <script src="lang/translate.js"></script>
 	  <script>
 		$(document).ready(function() {
 		   $("#arrowUp").click(function(){
@@ -28,25 +30,22 @@
    </head>
    <body style="overflow-x: hidden;">
       <section class="startingSections">
-	  <!-- <div style="text-align:right;"> <select class="selectpicker" data-width="fit">
-		<option>English</option>
-		<option>Portuguese</option>
-		<option>Polish</option>
-		</select> </div> -->
+	  <div style="font-size:20px;"><a href="#" class="lang_selector trn colorIdioms" data-value="en" id="en">EN</a> <!-- | <a href="#" class="lang_selector trn colorIdioms" data-value="pl" id="pl">PL</a> --> |
+	  <a href="#" class="lang_selector trn colorIdioms" data-value="pt" id="pt">PT</a></div> 
          <div class="container">
-         <h1 class="largerHeadline">Pedro's corner</h1>
+         <h1 class="largerHeadline trn" data-trn-key="title"></h1>
          <div class="centerElement">
             <img class="headerImage" src="images/caroles.jpg" alt="pmpc"/>
          </div>
          <div class="row glyphicons">
             <div class="col-lg-4">
-               <p class="glyphiconText"> <span class="glyphicon glyphicon-briefcase glyphiconStyle"></span>Software Engineer @ Noesis</p>
+               <p class="glyphiconText"> <span class="glyphicon glyphicon-briefcase glyphiconStyle"></span><span class="trn" data-trn-key="job"></span></p>
             </div>
             <div class="col-lg-4">
-               <p class="glyphiconText"> <span class="glyphicon glyphicon-education glyphiconStyle"></span>IT Master Student @ FCT-UNL</p>
+               <p class="glyphiconText"> <span class="glyphicon glyphicon-education glyphiconStyle"></span><span class="trn" data-trn-key="academic"></span></p>
             </div>
             <div class="col-lg-4" style="text-align:right;">
-               <p class="glyphiconText"> <span class="glyphicon glyphicon-certificate glyphiconStyle"></span>Microsoft Certified Professional</p>
+               <p class="glyphiconText"> <span class="glyphicon glyphicon-certificate glyphiconStyle"></span><span class="trn" data-trn-key="certification"></span></p>
             </div>
          </div>
       </section>
@@ -57,10 +56,7 @@
             <div class="row">
                <div class="col-lg-5 col-lg-push-7 imgCenterMobile">  <img class="resizeImage imgLeftMobile" style="width:350px;height:90px;" src="images/noesis.png" alt="noesis"/></div>
                <div class="col-lg-7 col-lg-pull-5">
-                  <p class="styleParagraph">In <b>2018</b>, I decided to take a shift in my career to pursue for bigger goals. <a href="https://www.noesis.pt" target="_blank">Noesis</a> was a <b>great</b> choice. 
-                     The company itself is ambitious and likes to bet on state-of-the-art technologies, which makes everything more interesting. From day zero I could see that these professionals
-                     knew what they were doing. They won't be satisfied by just being part of the game... unless they <b>win</b> it.
-                  </p>
+                  <p class="styleParagraph trn" data-trn-key="noesis"> </p>
                </div>
             </div>
          </div>
@@ -72,13 +68,8 @@
             <div class="row">
                <div class="col-lg-5 imgCenterMobile	" style="text-align:right;">  <img class="resizeImage"style="width:250px;height:100px;" src="images/gmv.png" alt="gmv"/></div>
                <div class="col-lg-7">
-                  <p class="styleParagraph">In <b>2015</b>, as a <b>Trainee</b>, I joined <a href="https://www.gmv.com" target="_blank"><b>GMV</b></a>, a multinational company.
-                     The task consisted in testing a real-time operating system concerning the avionics industry.
-                  </p>
-                  <p class="styleParagraph">In the beginning of <b>2016</b>, I decided to take a new challenge as a <b>Software Engineer</b>. Despite my main functions being related to <b>Full-Stack</b> web development, 
-                     I also had my fair quote of responsibility in interacting with clients and being present in several meetings.<br> In July <b>2017</b>, I decided to leave the company to yet another Erasmus experience,
-                     however, never forgetting all the amazing things that this enterprise was able to provide me. To them, <b>thank you</b>.
-                  </p>
+                  <p class="styleParagraph trn" data-trn-key="gmv_first"></p>
+                  <p class="styleParagraph trn" data-trn-key="gmv_second"> </p>
                </div>
             </div>
          </div>
@@ -90,11 +81,9 @@
             <div class="row">
                <div class="col-lg-5 col-lg-push-7 imgCenterMobile">  <img class="resizeImage" style="width:350px;height:150px;" src="images/fct_unl.gif" alt="fct_unl"/></div>
                <div class="col-lg-7 col-lg-pull-5">
-                  <p class="styleParagraph">I'm currently finishing my Master's degree @ <a href="https://www.fct.unl.pt/" target="_blank"><b>Faculdade de Ciências e Tecnologia of Universidade Nova de Lisboa</b></a>.
-                     My Master Thesis is related to Domain Specific Modeling Languages in the Model Driven Development context.
-                     During my course, I studied both in Czechia and Poland in <b>Brno University Of Technology</b> and <b>Poznan University of Technology</b>, respectively.<br>
-                     Feel also free, to <a href="docs/prep_thesis_pmpc.pdf" class="btn btn-success" download>download</a> my Master Thesis's <b>preparation</b> paper.
-                  </p>
+                  <p class="styleParagraph trn" data-trn-key="fct_unl"></p>
+					 <span class="styleParagraph trn" data-trn-key="thesis_pre"></span><a href="docs/prep_thesis_pmpc.pdf" class="btn btn-success" download>download</a>
+					 <span class="styleParagraph trn" data-trn-key="thesis_post"></span>
                </div>
             </div>
          </div>
@@ -104,21 +93,21 @@
          <div class="container">
             <div class="row centerElement">
                <div class="col-lg-4">
-                  <img class="roundedImage" src="images/gamepad.png" alt="Generic placeholder image" width="140" height="140">
-                  <h2 class="headerInterests">Gaming</h2>
-                  <p class="activitiesCSS">For a long time that I enjoy spending a considerable amount of time playing video games. It makes me release from the everyday stress while having lots of fun with my friends.</p>
+                  <img class="" src="images/gamepad.png" alt="Generic placeholder image" width="140" height="140">
+                  <h2 class="headerInterests trn" data-trn-key="game"></h2>
+                  <p class="activitiesCSS trn" data-trn-key="gaming"></p>
                </div>
                <!-- /.col-lg-4 -->
                <div class="col-lg-4">
-                  <img class="roundedImage" src="images/book.png" alt="Generic placeholder image" width="140" height="140">
-                  <h2 class="headerInterests">Reading</h2>
-                  <p class="activitiesCSS">There's always something we don't know. I have a huge eagerness to learn new things. Each time I finish a book I have the urge to buy the next one and learn new things again. I seem to be stuck in this loop as long as I will have the money and time to afford it :-)</p>
+                  <img class="" src="images/book.png" alt="Generic placeholder image" width="140" height="140">
+                  <h2 class="headerInterests trn" data-trn-key="read"></h2>
+                  <p class="activitiesCSS trn" data-trn-key="reading"></p>
                </div>
                <!-- /.col-lg-4 -->
                <div class="col-lg-4">
-                  <img class="roundedImage" src="images/travel.jpg" alt="Generic placeholder image" width="140" height="140">
-                  <h2 class="headerInterests">Travelling</h2>
-                  <p class="activitiesCSS">It's impossible to stop. That's how I feel about travelling around the world right after my first Erasmus experience. <br>Life is way too precious for us to stay still for a longish time.</p>
+                  <img class="" src="images/travel.png" alt="Generic placeholder image" width="140" height="140">
+                  <h2 class="headerInterests trn" data-trn-key="travel"></h2>
+                  <p class="activitiesCSS trn" data-trn-key="travelling"></p>
                </div>
                <!-- /.col-lg-4 -->
             </div>

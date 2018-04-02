@@ -62,6 +62,9 @@
 			font-size: 20px;
 			display:flex;
 		 }
+		 .colorIdioms{
+			 color:inherit;
+		 }
 		 @media (max-width: 768px) {
 
 			[class*="col-"]{
