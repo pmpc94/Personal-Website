@@ -19,7 +19,7 @@
          }
          .largerHeadline{
          margin-bottom: .5rem;
-         font-family: Lato;
+         font-family: 'Droid Sans', sans-serif;
          font-weight: 500;
          line-height: 1.1;
          color: #0a0a0a;
@@ -58,12 +58,14 @@
 			margin-right:15px;
 		 }
 		 .glyphiconText{
-			font-family: Lato;
-			font-size: 20px;
+			font-family: 'Droid Sans', sans-serif;
+			font-size: 18.8px;
 			display:flex;
 		 }
-		 .colorIdioms{
+		 .idiomsStyle{
 			 color:inherit;
+			 font-family: 'Droid Sans', sans-serif;
+			 font-size:20px;
 		 }
 		 @media (max-width: 768px) {
 
