@@ -1,6 +1,7 @@
 .startingSections{
          margin-bottom:100px;
 		 background: linear-gradient(#96deda , #50c9c3) !important;
+		 height:475px;
          }
          .separatedSections{
          padding-bottom:100px;
@@ -15,14 +16,14 @@
          }
          .centerElement{
          text-align:center;
-         padding-bottom:30px;
+         padding-bottom:45px;
          }
          .largerHeadline{
          margin-bottom: .5rem;
          font-family: 'Droid Sans', sans-serif;
          font-weight: 500;
          line-height: 1.1;
-         color: #0a0a0a;
+         color: #333333;
          text-align:center;
          }
 		 .headerInterests{
@@ -36,7 +37,7 @@
          font-family: 'Lato';
          font-size: 20px;
          line-height: 35px;
-         color:#000000;
+         color:#333333;
 		 text-align:justify;
          }
          .betweenSections{
@@ -101,5 +102,9 @@
 			
 			.glyphicon{
 				margin-bottom:5px;
+			}
+			
+			.startingSections{
+				height: 765px;
 			}
 		}
