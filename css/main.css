@@ -1,7 +1,5 @@
 .startingSections{
-         margin-bottom:100px;
-		 background: linear-gradient(#96deda , #50c9c3) !important;
-		 height:475px;
+		 background: linear-gradient(#50c9c3 , #96deda) !important;
          }
          .separatedSections{
          padding-bottom:100px;
@@ -64,18 +62,19 @@
 			display:flex;
 		 }
 		 .idiomsStyle{
-			 color:inherit;
+			 color:#fff;
 			 font-family: 'Droid Sans', sans-serif;
 			 font-size:20px;
 		 }
-		 @media (max-width: 768px) {
+		 .fadeOut{
+			 height:100px;
+			 background: linear-gradient(#96deda , #ffffff);
+		 }
+		 /* SMARTPHONES */
+		 @media (max-width: 767px) {
 
 			[class*="col-"]{
 				margin-bottom: 40px;
-			}
-			
-			p{
-				font-size:15px !important;
 			}
 			
 			.imgCenterMobile{
@@ -88,23 +87,29 @@
 			
 			.headerImage{
 				margin-top:25px;
-				width:80%;
-			}
-			
-			.startingSection{
-				height:400px;
+				width:60%;
 			}
 			
 			.glyphiconText{
 				text-align:center;
 				display:grid;
+				margin-right:5%;
+				font-size:15px;
 			}
 			
 			.glyphicon{
 				margin-bottom:5px;
 			}
-			
-			.startingSections{
-				height: 765px;
+			.glyphicon.glyphicon-chevron-down{
+				display:block !important;
 			}
 		}
+		
+		/* TABLETS */
+		 @media (min-width: 768px) {
+			 .glyphiconText{
+				text-align:center;
+				display:block;
+				margin-right:2.5%;
+			 }
+		 }

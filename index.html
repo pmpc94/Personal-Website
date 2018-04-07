@@ -25,12 +25,16 @@
 		   $("#arrowUp").click(function(){
 				$('html, body').animate({scrollTop:0}, 800);
 		   });
+		   $("#arrowDown").click(function(){
+				$('html, body').animate({
+				scrollTop: $(".alignDate").offset().top}, 800);
+		   });
 		});
 	  </script>
    </head>
    <body style="overflow-x: hidden;">
       <section class="startingSections">
-	  <div style="text-align:right;margin-right:10px;"><a href="#" class="lang_selector trn idiomsStyle" data-value="en" id="en">EN</a> | <a href="#" class="lang_selector trn idiomsStyle" data-value="pl" id="pl">PL</a> |
+	  <div style="text-align:right;margin-right:10px;"><a href="#" class="lang_selector trn idiomsStyle" data-value="en" id="en">EN</a><span style="color:white;"> \</span> <a href="#" class="lang_selector trn idiomsStyle" data-value="pl" id="pl">PL</a> <span style="color:white;"> /</span>
 	  <a href="#" class="lang_selector trn idiomsStyle" data-value="pt" id="pt">PT</a></div> 
          <div class="container">
          <h1 class="largerHeadline trn" data-trn-key="title"></h1>
@@ -39,16 +43,18 @@
          </div>
          <div class="row glyphicons">
             <div class="col-lg-4">
-               <p class="glyphiconText"> <span class="glyphicon glyphicon-briefcase glyphiconStyle"></span><span class="trn" data-trn-key="job"></span></p>
+               <p class="glyphiconText"><span class="nowrap"><span class="glyphicon glyphicon-briefcase glyphiconStyle"></span><span class="trn" data-trn-key="job"></span></span></p>
             </div>
             <div class="col-lg-4">
-               <p class="glyphiconText"> <span class="glyphicon glyphicon-education glyphiconStyle"></span><span class="trn" data-trn-key="academic"></span></p>
+               <p class="glyphiconText"><span class="nowrap"><span class="glyphicon glyphicon-education glyphiconStyle"></span><span class="trn" data-trn-key="academic"></span></span></p>
             </div>
-            <div class="col-lg-4" style="text-align:right;">
-               <p class="glyphiconText"> <span class="glyphicon glyphicon-certificate glyphiconStyle"></span><span class="trn" data-trn-key="certification"></span></p>
+            <div class="col-lg-4">
+               <p class="glyphiconText" style="margin-right:0;"><span class="nowrap"><span class="glyphicon glyphicon-certificate glyphiconStyle"></span><span class="trn" data-trn-key="certification"></span></span></p>
             </div>
          </div>
+		 <div id="arrowDown" class="glyphicon glyphicon-chevron-down" style="display:none; text-align:center;font-size:25px;color:#ffffff ;"></div>
       </section>
+	  <div class="fadeOut"></div>
       <section class="separatedSections">
          <div class="container">
             <p class="alignDate" style="color:#0093d0;">2018</p>
@@ -118,8 +124,10 @@
          <hr class="betweenSections">
          <div class="container">
             <footer>
-               <p class="styleParagraph centerFooter" style="color:#ffffff;">© 2018 Pedro Carolina <span style="font-size:40px;"><a style="text-decoration:none;" href="https://www.linkedin.com/in/pcarolina/" target="_blank">
-                  <i class="fa fa-linkedin"></i>&nbsp;</a><a href="https://github.com/pmpc94" target="_blank"><i class="fa fa-github"></i></a>
+               <p class="styleParagraph centerFooter" style="color:#ffffff;">© 2018 Pedro Carolina <span style="font-size:40px;">
+			   <a href="mailto:testmailto@gmail.com"><i style="color:#337ab7" class="fa fa-envelope"></i></a>
+			   <a style="text-decoration:none;" href="https://www.linkedin.com/in/pcarolina/" target="_blank"><i class="fa fa-linkedin"></i></a>
+			   <a href="https://github.com/pmpc94" target="_blank"><i class="fa fa-github"></i></a> 
                </p>
                </span>
             </footer>
