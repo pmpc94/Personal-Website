@@ -100,8 +100,14 @@
 			.glyphicon{
 				margin-bottom:5px;
 			}
+			
 			.glyphicon.glyphicon-chevron-down{
 				display:block !important;
+			}
+			
+			.glyphiconSpanText{
+				position: relative !important;
+				bottom: 25% !important;
 			}
 		}
 		
@@ -112,4 +118,9 @@
 				display:block;
 				margin-right:2.5%;
 			 }
+			 
+			 .glyphiconSpanText{
+				position: relative !important;
+				bottom: 5px !important;
+			}
 		 }
