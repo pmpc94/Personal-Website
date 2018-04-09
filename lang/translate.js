@@ -2,9 +2,9 @@ $(function() {
 
   var t = {
     title: {
-      pt: "O cantinho do Pedro",
-	  en: "Pedro's corner",
-	  pl: "Kąt Pedra"
+      pt: "O cant<span style=color:#fff>i</span>nho do Pedro",
+	  en: "Pedro<span style=color:#fff>'</span>s corner",
+	  pl: "K<span style=color:#fff>ą</span>t Pedra"
     },
     job: {
       pt: "Engenheiro de Software @ Noesis",

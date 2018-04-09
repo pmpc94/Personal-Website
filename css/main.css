@@ -1,5 +1,7 @@
 .startingSections{
-		 background: linear-gradient(#50c9c3 , #96deda) !important;
+		 #background: linear-gradient(#50c9c3 , #96deda) !important;
+		 background: linear-gradient(#808080 , #ffffff) !important;
+		 margin-bottom:100px;
          }
          .separatedSections{
          padding-bottom:100px;
@@ -55,20 +57,18 @@
 		 .glyphiconStyle{
 			font-size:40px;
 			margin-right:15px;
+			color:#337ab7;
 		 }
 		 .glyphiconText{
 			font-family: 'Droid Sans', sans-serif;
 			font-size: 18.8px;
 			display:flex;
+			color:#333333;
 		 }
 		 .idiomsStyle{
-			 color:#fff;
+			 color:#333333;
 			 font-family: 'Droid Sans', sans-serif;
 			 font-size:20px;
-		 }
-		 .fadeOut{
-			 height:100px;
-			 background: linear-gradient(#96deda , #ffffff);
 		 }
 		 /* SMARTPHONES */
 		 @media (max-width: 767px) {
